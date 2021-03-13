@@ -42,4 +42,6 @@ def download_video():
     os.remove(f"downloads/{FILE_NAME}.mp4")
 
     return send_file(return_data,
-                     attachment_filename=f"downloads/{FILE_NAME}.mp4")
+                     attachment_filename=f"downloads/{FILE_NAME}.mp4",
+                     as_attachment=True,
+                    )
