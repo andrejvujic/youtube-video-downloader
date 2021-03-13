@@ -27,7 +27,7 @@ def download_video():
         print("video initialized")
     except:
         print("error while initializing")
-        return
+        return "an error ocurred while initializing"
 
     print("video downloading")
     yt.streams.filter(progressive=True, file_extension='mp4').order_by(
